@@ -3,6 +3,8 @@
   <div class="align">
     <h1>Home</h1>
     <p><%=homeStartingContent%></p>
-  </div>
+    <% for(var i=0; i<posts.length;i++){ %>
+        <%- console.log(posts[i].title) -%> 
+          <% } %>  </div>
 </body>
 <%- include('partials/footer'); -%>
