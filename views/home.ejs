@@ -5,7 +5,7 @@
     <p><%=homeStartingContent%></p>
     <%posts.forEach(post=>{%>
     <h1><%=post.title%></h1>
-    <p><%=post.titleContent%></p>
+    <p><%=post.titleContent.substring(0,100)+"..."%></p>
     <%})%>
   </div>
 </body>
