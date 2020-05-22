@@ -3,8 +3,10 @@
   <div class="align">
     <h1>Home</h1>
     <p><%=homeStartingContent%></p>
-    <% for(var i=0; i<posts.length;i++){ %>
-        <%- console.log(posts[i].title) -%> 
-          <% } %>  </div>
+    <%posts.forEach(post=>{%>
+    <h1><%=post.title%></h1>
+    <p><%=post.titleContent%></p>
+    <%})%>
+  </div>
 </body>
 <%- include('partials/footer'); -%>
